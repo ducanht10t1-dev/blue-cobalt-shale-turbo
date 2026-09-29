@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Vở Unit",
+      "hasCanvas": false,
+      "bodyTextLen": 1412,
+      "bodyTextHash": "72b91087f772c3b66057ffdba7a5f80fb021060dac3a9b15c7eb956a91aa1283",
+      "bodyTextPrefix": "Vở Unit Sửa sổ Sổ luyện tập 17 unit đã soạn sẵn. Chọn một unit, ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Vở Unit",
+      "hasCanvas": false,
+      "bodyTextLen": 1412,
+      "bodyTextHash": "72b91087f772c3b66057ffdba7a5f80fb021060dac3a9b15c7eb956a91aa1283",
+      "bodyTextPrefix": "Vở Unit Sửa sổ Sổ luyện tập 17 unit đã soạn sẵn. Chọn một unit, ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-built.json",
+  "divergesFromBaseline": false,
+  "baselineReasons": []
+}

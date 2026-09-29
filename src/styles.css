@@ -1,0 +1,113 @@
+@import "@fontsource/be-vietnam-pro/latin-400.css";
+@import "@fontsource/be-vietnam-pro/latin-500.css";
+@import "@fontsource/be-vietnam-pro/latin-600.css";
+@import "@fontsource/be-vietnam-pro/vietnamese-400.css";
+@import "@fontsource/be-vietnam-pro/vietnamese-500.css";
+@import "@fontsource/be-vietnam-pro/vietnamese-600.css";
+@import "@fontsource/fraunces/latin-600.css";
+@import "@fontsource/fraunces/latin-700.css";
+@import "@fontsource/fraunces/vietnamese-600.css";
+@import "@fontsource/fraunces/vietnamese-700.css";
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Be Vietnam Pro", sans-serif;
+  --font-display: Fraunces, Georgia, serif;
+
+  --color-bg: #f3efe6;
+  --color-surface: #fffdf8;
+  --color-ink: #1c1915;
+  --color-muted: #6f675e;
+  --color-line: #e4d9c8;
+  --color-accent: #9a4a24;
+  --color-accent-fg: #fff8f3;
+  --color-sage: #1f6b4a;
+  --color-sage-fg: #f3fff8;
+  --color-sage-soft: #e7f3ec;
+  --color-clay-soft: #f8ebe3;
+  --color-ink-soft: #f6f1e8;
+
+  --radius-control: 0.75rem;
+  --radius-card: 1.25rem;
+  --shadow-card: 0 1px 2px rgb(28 25 21 / 0.05), 0 12px 32px rgb(28 25 21 / 0.05);
+}
+
+@layer base {
+  html {
+    height: 100%;
+    color-scheme: light;
+  }
+  body {
+    min-height: 100%;
+    background: var(--color-bg);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  button:not(:disabled),
+  [role="button"]:not(:disabled),
+  summary {
+    cursor: pointer;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+  }
+  ::selection {
+    background: var(--color-clay-soft);
+    color: var(--color-ink);
+  }
+  mark.hit,
+  mark.hit-ok {
+    border-radius: 0.25rem;
+    padding: 0 0.2rem;
+  }
+  mark.hit {
+    background: var(--color-clay-soft);
+    color: var(--color-accent);
+  }
+  mark.hit-ok {
+    background: var(--color-sage-soft);
+    color: var(--color-sage);
+  }
+}
+
+@layer components {
+  .field {
+    width: 100%;
+    min-height: 2.75rem;
+    border-radius: var(--radius-control);
+    border: 1px solid var(--color-line);
+    background: var(--color-surface);
+    color: var(--color-ink);
+    padding: 0.75rem 1rem;
+    font: inherit;
+    line-height: 1.45;
+  }
+  .field::placeholder {
+    color: var(--color-muted);
+  }
+  textarea.field {
+    min-height: 5.5rem;
+    resize: vertical;
+  }
+  .cloze-blank {
+    display: inline-block;
+    min-width: 4.5rem;
+    margin: 0 0.2rem;
+    border-bottom: 2px solid var(--color-accent);
+    transform: translateY(-0.12em);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
